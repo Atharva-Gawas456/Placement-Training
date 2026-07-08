@@ -1,12 +1,7 @@
 import java.util.Scanner;
 
 public class Triangle {
-    public static String isPossible() {
-        Scanner sc = new Scanner(System.in);
-
-        int n = sc.nextInt();
-        int m = sc.nextInt();
-        int k = sc.nextInt();
+    public static String isPossible(int n, int m, int k) {
 
         double t = (double) (n * m) / k;
 
@@ -27,6 +22,12 @@ public class Triangle {
     }
 
     public static void main(String[] args) {
-        System.out.println(isPossible());
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int m = sc.nextInt();
+        int k = sc.nextInt();
+        System.out.println(isPossible(n, m, k));
+        sc.close();
     }
 }
